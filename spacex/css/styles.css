@@ -1,0 +1,1539 @@
+
+/* 01 TYPOGRAPHY
+------------------------------------------*/
+@import url("https://use.typekit.net/ecw8nqf.css");
+
+body {
+  font-family: "acumin-pro", sans-serif;
+  background-color: #191919;
+  color: #fff;
+  margin: 0;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+p {
+  font-weight: 100;
+}
+
+
+
+/* 02 NAVIGATON
+------------------------------------------*/
+
+.navbar {
+  display: grid;
+  grid-template-columns: 50% 45% 5%;
+  grid-template-rows: 50px;
+  position: relative;
+  clear: both;
+  margin: 0;
+}
+
+.logo {
+  max-width: 60%;
+  margin-top: 18px;
+  margin-left: 30px;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: end;
+}
+
+#menu {
+  display: block;
+  padding-top: 15px;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: end;
+  letter-spacing: 1px;
+  text-align: right;
+  position: relative;
+  clear: both;
+}
+
+.fa-bars {
+  margin-right: 5px;
+}
+
+#navlist {
+  list-style: none;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 300px;
+  display: none;
+}
+
+nav li {
+    display: block;
+    padding: 30px 0px;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:active {
+  color: orange;
+}
+
+.active {
+  color: #777;
+}
+
+.social-links {
+  margin-top: 30px;
+  font-size: 1.8rem;
+  margin-left: -20px;
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+  #menu {
+    display: none;
+  }
+
+  #navlist, nav li {
+    display: inline;
+    float: right;
+    padding-left: 40px;
+    padding-top: 5px;
+    font-size: 0.7rem;
+  }
+
+  nav li a:hover {
+    color: orange;
+  }
+
+  #topHeader {
+    display: grid;
+    grid-template-columns: 50% 45% 5%;
+    grid-template-rows: 60px;
+    position: relative;
+    clear: both;
+    margin: 0;
+  }
+
+  #navlist {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: end;
+  }
+
+  .social-links {
+    display: none;
+  }
+
+}
+
+
+
+/* 03 BUTTONS & LINKS
+------------------------------------------*/
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button {
+  background-color: #444;
+  padding: 15px 20px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 50px;
+  font-size: 0.7rem;
+}
+
+.button:hover {
+  background-color: orange;
+}
+
+.button:active {
+  background-color: darkorange;
+}
+
+.read-more {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+
+
+/* 04 FOOTER
+------------------------------------------*/
+
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: #232323;
+  height: 100px;
+  text-align: center;
+  padding: 40px 10px;
+  color: #919191;
+}
+
+.social {
+  padding: 20px;
+  color: #919191;
+  font-size: 1.2rem;
+}
+
+.social:hover {
+  color: #fff;
+}
+
+.copy {
+  font-weight: 100;
+  letter-spacing: 3px;
+  margin-top: 30px;
+  font-size: 0.7rem;
+}
+
+
+
+
+
+
+/* 05 HOME PAGE
+------------------------------------------*/
+
+.homepage {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 250px 950px 300px 300px 300px;
+}
+
+.intro {
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 10px 20px;
+  background-image: url(../images/suit.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.intro h1 {
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
+.launch-preview {
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 50px 20px;
+}
+
+.launch-preview h2, a {
+   text-align: center;
+}
+
+.launchDate {
+  font-size: 0.8rem;
+  padding-top: 50px;
+  font-weight: 600;
+}
+
+.missionName {
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+
+.flightNumber {
+  float: right;
+  font-size: 0.8rem;
+  margin-top: 49px;
+}
+
+.launchSite, .rocket {
+  margin-bottom: 20px;
+}
+
+#launch1, #launch2 {
+  border-bottom: 1px solid #444;
+}
+
+.fa-rocket, .fa-map-marker-alt {
+  opacity: 0.5;
+}
+
+.cta {
+  text-align: center;
+}
+
+.marsmission {
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-image: url(../images/mars.png);
+  background-position: center;
+  background-size: cover;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.moonmission {
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-image: url(../images/moon.png);
+  background-position: center;
+  background-size: cover;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.dragonmission {
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  background-image: url(../images/dragon.png);
+  background-position: center;
+  background-size: cover;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 400px) {
+  .intro {
+    padding: 10px 50px;
+  }
+
+  .marsmission, .moonmission, .dragonmission {
+    padding: 60px 40px;
+  }
+
+  .launch-preview {
+    padding: 50px 40px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .intro {
+    padding: 30px 100px;
+  }
+
+  .marsmission, .moonmission, .dragonmission {
+    padding: 60px 90px;
+  }
+
+  .launch-preview {
+    padding: 50px 70px;
+  }
+
+  .logo {
+    max-width: 50%;
+  }
+}
+
+
+@media only screen and (min-width: 700px) {
+  .intro {
+    padding: 30px 200px;
+  }
+
+  .marsmission, .moonmission, .dragonmission {
+    padding: 60px 200px;
+  }
+
+  .launch-preview {
+    padding: 50px 200px;
+  }
+
+  .logo {
+    max-width: 30%;
+    padding-bottom: 20px;
+  }
+}
+
+
+@media only screen and (min-width: 850px) {
+  .intro {
+    padding: 30px 250px;
+  }
+
+  .marsmission, .moonmission, .dragonmission {
+    padding: 70px 250px;
+  }
+
+  .logo {
+    max-width: 30%;
+    padding-bottom: 20px;
+  }
+
+}
+
+
+@media only screen and (min-width: 930px) {
+  .intro {
+    padding: 30px 300px;
+  }
+
+  .marsmission, .moonmission, .dragonmission {
+    padding: 70px 300px;
+  }
+
+  .launch-preview {
+    padding: 50px 240px;
+  }
+
+  .logo {
+    max-width: 25%;
+    padding-bottom: 20px;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+  .homepage {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 450px 400px 400px 400px;
+  }
+
+  .intro {
+    padding: 80px 300px;
+  }
+
+  .launch-preview {
+    display: grid;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+    grid-template-rows: 80px 160px 50px;
+    padding: 50px 55px;
+  }
+
+  .lp-title {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+
+  #launch1 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border-bottom: none;
+    border-right: 1px solid #444;
+    padding: 0px 30px;
+  }
+
+  #launch2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border-bottom: none;
+    border-right: 1px solid #444;
+    padding: 0px 30px;
+  }
+
+  #launch3 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding: 0px 30px;
+  }
+
+  .launchDate {
+    padding-top: 10px;
+  }
+
+  .flightNumber {
+    margin-top: 10px;
+  }
+
+  .cta {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+
+  .launchSite, .rocket {
+    margin-bottom: 10px;
+  }
+
+  .intro, .marsmission, .moonmission, .dragonmission {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    grid-template-rows: 400px;
+    padding: 100px 0px;
+  }
+
+  .article-text {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+
+  .read-more:hover {
+    text-decoration: underline;
+  }
+
+
+  .logo {
+    max-width: 40%;
+    padding-bottom: 20px;
+  }
+
+}
+
+@media only screen and (min-width: 1300px) {
+  .launch-preview {
+    display: grid;
+    grid-template-columns: 15% 23% 23% 23% 15%;
+    grid-template-rows: 80px 160px 50px;
+    padding: 50px 55px;
+  }
+
+  .logo {
+    max-width: 35%;
+    padding-bottom: 20px;
+  }
+
+}
+
+@media only screen and (min-width: 1700px) {
+
+  .homepage {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 700px 450px 700px 700px 700px;
+  }
+
+  .intro, .marsmission, .moonmission, .dragonmission {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 400px;
+    padding: 250px 0px;
+  }
+
+  .launch-preview {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 80px 160px 50px;
+    padding: 50px 55px;
+  }
+
+  .logo {
+    max-width: 30%;
+    padding-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+/* 06 ABOUT
+------------------------------------------*/
+.aboutpage {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows:
+  /*spacex*/300px
+  /*quicks*/700px
+  /*tech*/400px
+  /*rockets*/900px
+  /*history*/350px
+  /*dragon*/350px
+  /*future*/350px
+  /*young*/350px;
+  text-align: center;
+}
+
+.spacex {
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url(../images/rocket2.png);
+  background-size: cover;
+  padding: 40px 0px;
+}
+
+.spacex, .technology, .history, .future, .young {
+  display: grid;
+  grid-template-columns: 3% 94% 3%;
+}
+
+.about-text {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.quickfacts {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 50px 40px;
+  background-image: url(../images/moon.png);
+}
+
+.quickfacts .fas {
+  margin-top: 40px;
+}
+
+.technology {
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  padding: 40px 30px;
+}
+
+.rockets {
+  display: grid;
+  grid-template-columns: 20% 30% 30% 20%;
+  grid-template-rows: 400px 400px;
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  text-align: left;
+}
+
+.rockets h3, .dragon h3 {
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.rockets h4, .dragon h4 {
+  font-weight: 100;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  margin-bottom: -15px;
+  color: #999;
+}
+
+.rockets p, .dragon p {
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #999;
+}
+
+.falcon-i img, .heavy-i img {
+  height: 400px;
+}
+
+.falcon-i {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  padding-left: 20px;
+}
+
+.falcon-f {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  padding-left: 10px;
+}
+
+.heavy-i {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  margin-top: 40px;
+}
+
+.heavy-f {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  margin-top: 40px;
+}
+
+.history {
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  padding: 40px 30px;
+}
+
+.dragon {
+  display: grid;
+  grid-template-columns: 20% 30% 30% 20%;
+  grid-template-rows: 400px;
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  text-align: left;
+}
+
+.dragon-i {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  margin-top: 40px;
+}
+
+.dragon-f {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  padding-left: 10px;
+  margin-top: 40px;
+}
+
+.dragon-i img {
+  height: 180px;
+  padding-top: 40px;
+}
+
+.future {
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  padding: 40px 30px;
+}
+
+.young {
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  padding: 50px 30px;
+  background-image: url(../images/mars.png);
+  background-size: cover;
+}
+
+
+@media only screen and (min-width: 425px) {
+
+  .spacex, .technology, .history, .future, .young {
+    grid-template-columns: 10% 80% 10%;
+    padding-top: 70px;
+  }
+
+  .rockets, .dragon {
+    display: grid;
+    grid-template-columns: 30% 25% 15% 30%;
+    }
+}
+
+
+@media only screen and (min-width: 540px) {
+
+  .spacex, .technology, .history, .future, .young {
+    grid-template-columns: 20% 60% 20%;
+    padding-top: 70px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  .spacex, .technology, .history, .future, .young {
+    grid-template-columns: 30% 40% 30%;
+    padding-top: 70px;
+  }
+
+  .rockets, .dragon {
+    display: grid;
+    grid-template-columns: 38% 15% 9% 38%;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+  .aboutpage {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:
+    /*spacex*/300px
+    /*quicks*/500px
+    /*tech*/400px
+    /*rockets*/900px
+    /*history*/350px
+    /*dragon*/350px
+    /*future*/350px
+    /*young*/350px;
+    text-align: center;
+  }
+
+  .quickfacts {
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100px 110px 100px;
+    background-size: cover;
+  }
+
+  .quick-overview {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding-top: 30px;
+  }
+
+  .founded {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  .vehicles {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  .employees {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  .government {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+
+  .satellite {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+
+  .astronaut {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+
+  .spacex, .technology, .history, .future, .young {
+    grid-template-columns: 35% 30% 35%;
+    padding-top: 70px;
+  }
+
+  .rockets, .dragon {
+    display: grid;
+    grid-template-columns: 40% 10% 10% 40%;
+    }
+
+  .dragon-i {
+    margin-left: -20px;
+  }
+
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+  .quickfacts {
+    grid-template-columns: 27% 15% 15% 15% 27%;
+    grid-template-rows: 100px 110px 100px;
+    background-size: cover;
+  }
+
+  .spacex, .technology, .history, .future, .young {
+    grid-template-columns: 35% 30% 35%;
+    padding-top: 70px;
+  }
+
+  .rockets, .dragon {
+    display: grid;
+    grid-template-columns: 45% 5% 5% 45%;
+    }
+
+  .dragon-i {
+    margin-left: -50px;
+  }
+
+  .heavy-i {
+    margin-left: -30px;
+  }
+
+  .falcon-i {
+    margin-left: -30px;
+  }
+
+}
+
+
+@media only screen and (min-width: 1600px) {
+
+  .quickfacts {
+    grid-template-columns: 35% 10% 10% 10% 35%;
+    grid-template-rows: 100px 110px 100px;
+    background-size: cover;
+  }
+
+  .spacex, .technology, .history, .future, .young {
+    grid-template-columns: 40% 20% 40%;
+    padding-top: 70px;
+  }
+
+  .rockets, .dragon {
+    display: grid;
+    grid-template-columns: 45% 5% 5% 45%;
+    }
+
+  .dragon-i {
+    margin-left: -50px;
+  }
+
+  .heavy-i {
+    margin-left: -30px;
+  }
+
+  .falcon-i {
+    margin-left: -30px;
+  }
+
+}
+
+
+
+
+/* 07 LAUNCHES
+------------------------------------------*/
+
+.launchpage {
+  display: grid;
+  grid-template-columns: 3% 94% 3%;
+  grid-template-rows: 210px 5600px;
+}
+
+.launches {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  padding: 40px 20px;
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  text-align: center;
+  background-image: url(../images/heavy.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.launches-text {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+#content {
+  padding: 0px 20px;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: end;
+}
+
+.rocket-lp {
+  border-bottom: 1px solid #444;
+  padding: 20px 0px 70px 0px;
+}
+
+
+@media only screen and (min-width: 530px) {
+
+  .launchpage {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 250px 5600px;
+  }
+
+  .launches {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    padding-top: 60px;
+  }
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+  .launchpage {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 350px 5600px;
+  }
+
+  .launches {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    padding-top: 100px;
+  }
+
+  #content {
+    padding-top: 50px;
+  }
+
+}
+
+@media only screen and (min-width: 1700px) {
+
+  .launchpage {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    grid-template-rows: 350px 5600px;
+  }
+
+  .launches {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    padding-top: 100px;
+  }
+
+  #content {
+    padding-top: 50px;
+  }
+
+}
+
+
+
+
+
+/* 08 CONTACT US
+------------------------------------------*/
+
+.contactpage {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 1300px;
+  padding-top: 40px;
+}
+
+.contactform {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: end;
+  width: 100%;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px 18px;
+  margin: 5px 0px;
+  box-sizing: border-box;
+  background-color: #262626;
+  color: #fff;
+  border: none;
+}
+
+textarea {
+  height: 200px;
+}
+
+::placeholder {
+  color: #bcbcbc;
+  opacity: 1;
+}
+
+.submit {
+  float: right;
+  margin-top: 0px;
+  background-color: #191919;
+  border: 1px solid #444;
+}
+
+#firstNameError, #lastNameError, #emailError, #messageError {
+  color: orange;
+  display: none;
+  font-size: 0.8rem;
+}
+
+.allfields {
+  font-size: 0.8em;
+}
+
+.successpage {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 160px 500px;
+  text-align: center;
+}
+
+.sent {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 40px 20px 0px 20px;
+}
+
+.back {
+  margin-top: 20px;
+}
+
+
+@media only screen and (min-width: 490px) {
+  .successpage {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 160px 700px;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+  .contactpage {
+    display: grid;
+    grid-template-columns: 20% 60% 40%;
+    grid-template-rows: 1300px;
+    padding-top: 40px;
+  }
+
+  .successpage {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 160px 1000px;
+    text-align: center;
+  }
+
+}
+
+  @media only screen and (min-width: 1024px) {
+    .contactpage {
+      display: grid;
+      grid-template-columns: 35% 30% 35%;
+      grid-template-rows: 1300px;
+      padding-top: 100px;
+    }
+
+    .successpage {
+      display: grid;
+      grid-template-columns: 35% 30% 35%;
+      grid-template-rows: 160px 1000px;
+      text-align: center;
+    }
+
+  }
+
+    @media only screen and (min-width: 1600px) {
+      .contactpage {
+        display: grid;
+        grid-template-columns: 40% 20% 40%;
+        grid-template-rows: 1300px;
+        padding-top: 100px;
+      }
+
+      .successpage {
+        display: grid;
+        grid-template-columns: 40% 20% 40%;
+        grid-template-rows: 160px 1000px;
+        text-align: center;
+      }
+
+    }
+
+
+
+/* 09 MISSON PAGES
+------------------------------------------*/
+
+.dragonpage {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 550px 180px 550px 500px;
+  text-align: center;
+}
+
+.marspage {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 550px 300px 550px 500px;
+  text-align: center;
+}
+
+.moonpage {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 550px 400px 200px 500px 400px;
+  text-align: center;
+}
+
+.moon-overview {
+  background-image: url(../images/surface.png);
+  background-size: cove
+}
+
+.mission-overview {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding: 40px 20px;
+}
+
+.mission-overview h2 {
+  margin: 50px 0px 20px 0px;
+}
+
+.mission-overview p {
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.details {
+  color: #999;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+}
+
+.parachute, .marsfact {
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.marsfact {
+  background-image: url(../images/mars.png);
+  background-size: cover;
+  display: grid;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.marsfact br {
+  display: none;
+}
+
+.moongraphic {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 50px 90px 50px;
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.mg-i {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.parachute img, .moongraphic img, .art img {
+  width: 100%;
+}
+
+.cargo {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  background-color: #fff;
+  color: #000;
+  padding: 50px 20px;
+}
+
+.fly-by {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  background-color: #fff;
+  color: #000;
+  padding: 50px 20px;
+
+}
+
+.mission-text {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.passenger {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  padding: 40px 20px;
+  background-color: #fff;
+  color: #000;
+}
+
+.art {
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 5;
+  grid-row-end: 5;
+  background-color: #fff;
+  color: #444;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.dragon-fact, .starship  {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  padding: 40px 20px;
+  background-color: #2b2b2b;
+}
+
+.starship {
+  padding-top: 100px;
+}
+
+.dragon-fact img {
+  max-height: 200px;
+  padding: 20px 0px;
+}
+
+.starship img {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.fact-text {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+@media screen and (min-width: 370px) {
+  .cargo, .dragon-fact, .fly-by, .passenger, .starship, .marsfact  {
+    grid-template-columns: 10% 80% 10%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .dragonpage {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 550px 250px 500px 500px;
+    text-align: center;
+  }
+
+  .moonpage {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 550px 380px 250px 450px 450px;
+    text-align: center;
+  }
+
+  .moongraphic {
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 60px 140px 50px;
+  }
+
+  .cargo, .dragon-fact, .fly-by, .passenger, .marsfact, .starship  {
+    grid-template-columns: 15% 70% 15%;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  .dragonpage {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 550px 300px 500px 500px;
+    text-align: center;
+  }
+
+  .cargo, .dragon-fact, .fly-by, .passenger, .starship   {
+    grid-template-columns: 20% 60% 20%;
+  }
+
+  .marsfact br {
+    display: block;
+  }
+
+  .moongraphic {
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 60px 140px 50px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .dragonpage {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 550px 430px 460px 500px;
+    text-align: center;
+  }
+
+  .moonpage {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 550px 380px 300px 390px 650px;
+    text-align: center;
+  }
+
+  .moongraphic {
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 100px 140px 50px;
+  }
+
+  .cargo, .dragon-fact, .fly-by, .passenger, .starship   {
+    grid-template-columns: 25% 50% 25%;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .dragonpage {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 550px 520px 500px 500px;
+    text-align: center;
+  }
+
+  .moonpage {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 550px 400px 380px 440px 900px;
+    text-align: center;
+  }
+
+  .marspage {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 550px 400px 550px 500px;
+    text-align: center;
+  }
+
+  .marsfact {
+    padding-top: 100px;
+  }
+
+  .moongraphic {
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 90px 140px 50px;
+  }
+
+
+  .cargo, .dragon-fact, .fly-by, .passenger, .starship   {
+    grid-template-columns: 35% 30% 35%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .dragonpage {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 550px 700px 500px 500px;
+    text-align: center;
+  }
+
+  .moonpage {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 550px 600px 700px 700px 1100px;
+    text-align: center;
+  }
+
+  .fly-by, .passenger {
+    padding-top: 150px;
+  }
+
+  .moongraphic {
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 200px 140px 50px;
+  }
+
+
+  .cargo, .dragon-fact, .fly-by, .passenger, .starship   {
+    grid-template-columns: 40% 20% 40%;
+  }
+
+}
+
+@media screen and (min-width: 2000px) {
+  .dragonpage {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 600px 1000px 800px 800px;
+    text-align: center;
+  }
+
+  .moonpage {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 600px 700px 1000px 700px 1500px;
+    text-align: center;
+  }
+
+  .marspage {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 550px 550px 730px 700px;
+    text-align: center;
+  }
+
+  .marsfact {
+    padding-top: 200px;
+  }
+
+  .moongraphic {
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 400px 140px 50px;
+  }
+
+  .cargo, .dragon-fact, .fly-by, .passenger, .starship  {
+    grid-template-columns: 40% 20% 40%;
+    padding-top: 200px;
+  }
+}
